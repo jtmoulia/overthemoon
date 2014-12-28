@@ -11,12 +11,32 @@ $ brew install node
 $ npm install
 ```
 
-## Building CSS
+## Usage
 
-From the project root:
+From the project root --
+
+To build the static site:
 
 ```shell
 $ ./node_modules/gulp/bin/gulp.js
+```
+
+To serve the website (default port: 8000):
+
+```shell
+$ ./node_modules/gulp/bin/gulp.js serve
+```
+
+To watch for and rebuild changes:
+
+```shell
+$ ./node_modules/gulp/bin/gulp.js watch
+```
+
+To serve and rebuild changes:
+
+```shell
+$ ./node_modules/gulp/bin/gulp.js watch-serve
 ```
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)

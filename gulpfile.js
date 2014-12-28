@@ -6,8 +6,10 @@ var serve = require('gulp-serve');
 
 var publicDir = './public'
 
+/* Tasks */
+
 gulp.task('default', function() {
-    gulp.src('less/grayscale.less')
+    gulp.src('./less/grayscale.less')
       .pipe(less())
       .pipe(minifyCSS())
       .pipe(gulp.dest(path.join(publicDir, 'css')));
@@ -15,3 +17,9 @@ gulp.task('default', function() {
 });
 
 gulp.task('serve', serve({root: 'public', port: 8000}));
+
+gulp.task('watch', function() {
+    gulp.watch('./less/*.less', ['default']);
+});
+
+gulp.task('watch-serve', ['watch', 'serve'], function() {});

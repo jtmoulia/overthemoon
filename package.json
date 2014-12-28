@@ -1,0 +1,11 @@
+{
+    "name": "overthemoon",
+    "version": "0.1.0",
+    "devDependencies": {
+        "gulp": "^3.8.10",
+        "gulp-less": "^2.0.1",
+        "gulp-minify-css": "^0.3.11",
+        "gulp-serve": "^0.3.0"
+    },
+    "private": true
+}

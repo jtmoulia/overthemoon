@@ -24,7 +24,7 @@ gulp.task('watch', function() {
     gulp.watch('./less/*.less', ['build']);
 });
 
-gulp.task('watch-serve', ['watch', 'serve'], function() {});
+gulp.task('watch-serve', ['build', 'watch', 'serve'], function() {});
 
 gulp.task('push', ['build'], function() {
     var s3 = require('gulp-s3');

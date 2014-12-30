@@ -28,6 +28,7 @@ h6 {
 }
 
 p {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -148,18 +149,20 @@ a {
         background: rgba(200, 54, 54, 0.2);
         margin-top: 100px;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .text-panel {
         background: rgba(0, 2, 0, 0.6);
         padding-top: 20px;
+        padding-bottom: 15px;
     }
 
     h5 {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 500;
-        margin-bottom: 5px;     
+        margin-bottom: 10px;     
     }
 
     p {
@@ -264,7 +267,6 @@ a {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
     text-align: center;
     background: url(../img/program1.jpg) no-repeat bottom center scroll;
     background-color: @dark;
@@ -273,11 +275,11 @@ a {
     background-size: cover;
     -o-background-size: cover;
 
-    h2, h3, p {
+    h1, h2, h3, p {
         color: #000;
     }
 
-    h2 {
+    h1, h2 {
         font-family: 'Montserrat', sans-serif;
         padding-top: 30px;
     }
@@ -288,20 +290,66 @@ a {
     }
 
     p {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 18px;
         font-weight: 600;
     }
 
+    .program-frame {
+        background: rgba(0,128,128, 0.2);
+        height: auto;
+        margin: 0 auto; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 100px;
+    }
     .program-text {
-        background: rgba(255,255,255, 0.6);
-        width: 60%;
+        background: rgba(255, 255, 255, 0.5);
+        width: 80%;
         height: auto;
         margin: 0 auto; 
         text-align: center;
-        margin-bottom: 160px;
         padding-bottom: 20px;
+        padding-right: 20px; 
+        padding-left: 20px;
     }
+}
+
+#travel {
+    h1 { 
+        margin-bottom: 50px;
+        color: #000;
+    }
+    p, h4, dl {
+        text-align: left;
+        color: #000;
+    }
+
+    dt {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+
+    a {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+    }
+
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/tree-jtree.jpg) no-repeat bottom center scroll;
+    background-color: @dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    .travel-panel {
+        background: rgba(0,128,128, 0.2);
+        padding: 20px;
+    }
+
 }
 
 .download-section {

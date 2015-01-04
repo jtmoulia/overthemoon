@@ -181,6 +181,7 @@ a {
         .intro-body {
             .brand-heading {
                 font-size: 100px;
+                text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
             }
         }
     }
@@ -311,6 +312,41 @@ a {
         padding-left: 20px;
     }
 }
+
+
+#photo-section {
+    .photo {
+        display: table;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        background: url(../img/e.jpg) no-repeat bottom center scroll;
+        background-color: @dark;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .row {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #FFF;
+        text-align: left;
+    }
+
+    p {
+        color: #FFF;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        text-align: left;
+    }
+
+}
+
 
 #travel {
     h1 { 
@@ -449,7 +485,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
     .download-section {

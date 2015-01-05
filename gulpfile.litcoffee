@@ -69,7 +69,7 @@ Serve the public directory.
 Watch for and rebuild on changes in the less files.
 
     gulp.task 'watch', ->
-        gulp.watch less_files, ['build']
+        gulp.watch "less/*.less", ['build']
 
 ### watch-serve
 

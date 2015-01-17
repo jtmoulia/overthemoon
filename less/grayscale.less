@@ -195,44 +195,28 @@ dl {
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid @light;
-    border-radius: 35px;
-    font-size: 50px;
-    color: @light;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    &:hover,
-    &:focus {
-        outline: none;
-        color: @light;
-        background: fade(@light, 10%);
+@media(max-width: 766px) {
+    .intro-panel {
+        padding-bottom: 40px;
     }
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
+
+    .text-panel {
+        padding: 30px;
     }
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
+
+    h5 {
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        padding-top: 10px;
+    }
+
+    .panel-body {
+        margin: 0px;
     }
 }
+
 
 @-webkit-keyframes pulse {    
     0 {
@@ -275,7 +259,7 @@ dl {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url(../img/jtree1.jpg) no-repeat bottom center scroll;
+    background: url(../img/events.jpg) no-repeat bottom center scroll;
     background-color: @dark;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,6 +302,12 @@ dl {
         padding-right: 20px;
         padding-left: 20px;
         paddin-top: 30px;
+    }
+
+    dt {
+        dd {
+            font-size: 18px;
+        }
     }
 }
 
@@ -365,7 +355,12 @@ dl {
         height: auto;
     }
 
+    @media(min-width:767px) {
+        padding-top: 6opx;
+    }
 }
+
+
 
 .download-section {
     width: 100%;
@@ -400,11 +395,11 @@ dl {
     padding-top: 120px;
     padding-bottom: 20px;
 
-    .who-right {
+    .lineup-right {
         text-align: right;
         padding-right: 20px;
     }
-    .who-left {
+    .lineup-left {
         text-align: left;
         padding-left: 20px;
     }
@@ -429,8 +424,18 @@ dl {
         color: @primary;
     }
 
+    @media(max-width:1000px) {
+        padding-top: 60px;
 
+        .lineup-left, .lineup-right {
+            dl {
+                color: #000;
+                font-size: 18px;
+            }
 
+            a { color: #000;}
+        }
+    }
 }
 
 .where-section {
@@ -444,7 +449,7 @@ dl {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 20px;
 
     h1 {
@@ -503,18 +508,6 @@ dl {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
-    border: 1px solid @primary;
-    color: @primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid @primary;
-        outline: none;
-        color: @dark;
-        background-color: @primary;
-    }
-}
 
 ul.banner-social-buttons {
     margin-top: 0;

@@ -302,6 +302,10 @@ dl {
         padding-right: 20px;
         padding-left: 20px;
         paddin-top: 30px;
+
+        @media(max-width:767px) {
+            width: 100%;
+        }
     }
 
     dt {
@@ -384,7 +388,7 @@ dl {
 .who-section {
     display: table;
     width: 100%;
-    height: auto;
+    max-height: 600px;
     text-align: center;
     background: url(../img/cambridge.jpg) no-repeat bottom center scroll;
     background-color: @dark;
@@ -392,8 +396,7 @@ dl {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 20px;
+    padding-top: 50px;
 
     .lineup-right {
         text-align: right;
